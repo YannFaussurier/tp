@@ -1,5 +1,4 @@
-FROM mozilla/sbt:8u292_1.5.7
-
+FROM mozilla/sbt
 WORKDIR /usr/epf
 
 COPY . .

@@ -16,7 +16,17 @@ object ClimateService {
    * @param description "my awesome sentence contains a key word like climate change"
    * @return Boolean True
    */
-  def isClimateRelated(description: String): Boolean = ???
+  def isClimateRelated(description: String): Boolean = {
+    val related = False
+
+    if (description.contains("global warning") || description.contains("IPCC") || description.contains("climate change") ) {
+    related=True
+    } 
+    else {
+    related=False
+    }
+    return related
+  }
 
   /**
    * parse a list of raw data and transport it with type into a list of CO2Record
